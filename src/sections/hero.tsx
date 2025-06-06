@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
 import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
@@ -29,12 +30,13 @@ export function HeroSection() {
                   } as React.CSSProperties}
                   className="pointer-events-none absolute inset-0 size-full will-change-[background-position] animate-shine rounded-xl"
                 />
-                <img
+                <Image
                   src="/logo.png"
-                  height="2000"
-                  width="2000"
+                  height={2000}
+                  width={2000}
                   className="h-auto w-full object-cover rounded-xl group-hover/card:shadow-xl"
                   alt="thumbnail"
+                  priority
                 />
               </CardItem>
             </CardBody>

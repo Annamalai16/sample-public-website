@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MotionValue, motion, useScroll, useTransform } from "motion/react";
 import { cn } from "@/lib/utils";
 import {
@@ -23,6 +23,7 @@ import { IconWorld } from "@tabler/icons-react";
 import { IconCommand } from "@tabler/icons-react";
 import { IconCaretLeftFilled } from "@tabler/icons-react";
 import { IconCaretDownFilled } from "@tabler/icons-react";
+import Image from "next/image";
 
 
 export const MacbookScroll = ({
@@ -161,11 +162,16 @@ export const Lid = ({
         className="absolute inset-0 h-96 w-[32rem] rounded-2xl bg-[#010101] p-2"
       >
         <div className="absolute inset-0 rounded-lg bg-[#272729]" />
-        <img
-          src={src as string}
-          alt="aceternity logo"
-          className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
-        />
+        {src && (
+          <Image
+            src={src}
+            alt="aceternity logo"
+            fill
+            className="absolute inset-0 h-full w-full rounded-lg object-cover object-left-top"
+            sizes="(max-width: 512px) 100vw, 512px"
+            priority
+          />
+        )}
       </motion.div>
     </div>
   );
@@ -631,12 +637,13 @@ export const OptionKey = ({ className }: { className: string }) => {
 
 const AceternityLogo = () => {
   return (
-    <img
+    <Image
       src="/logo.png"
-      height="2000"
-      width="2000"
+      height={40}
+      width={40}
       className="h-[40px] w-[40px] object-cover rounded-xl group-hover/card:shadow-xl"
       alt="thumbnail"
+      priority
     />
   );
 };

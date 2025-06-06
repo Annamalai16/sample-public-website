@@ -18,7 +18,7 @@ export const TextGenerateEffect = ({
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { amount: 0.5 }); // triggers when 50% is visible
 
-  let wordsArray = words.split(" ");
+  const wordsArray = words.split(" ");
 
   useEffect(() => {
     if (isInView) {

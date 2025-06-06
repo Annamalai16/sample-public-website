@@ -2,7 +2,7 @@
 import React from "react";
 import { Timeline } from "@/components/ui/timeline";
 import { SectionHeader } from "@/components/general/section-header";
-import { IconFileInvoice, IconHeartHandshake, IconRocket, IconSettingsCheck, IconSettingsSpark, IconTargetArrow, IconTrendingUp } from "@tabler/icons-react";
+import { IconFileInvoice, IconHeartHandshake, IconRocket, IconSettingsCheck, IconTargetArrow, IconTrendingUp } from "@tabler/icons-react";
 
 export function ProcessSection() {
   const data = [
@@ -53,7 +53,7 @@ export function ProcessSection() {
       content: (
         <div>
           <p className="mb-4 text-xs font-normal text-neutral-800 md:text-sm dark:text-neutral-200">
-            Our strategies are built to scale. Whether it's improving customer engagement, increasing efficiency, or expanding into new markets — the focus is on measurable, sustainable growth at every stage.
+            Our strategies are built to scale. Whether it&apos;s improving customer engagement, increasing efficiency, or expanding into new markets — the focus is on measurable, sustainable growth at every stage.
           </p>
         </div>
       ),

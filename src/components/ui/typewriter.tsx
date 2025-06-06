@@ -3,7 +3,7 @@
 import { TypeAnimation } from 'react-type-animation';
 
 const TypeWriter = ({words}: {words:string[]}) => {
-  let sequence: (string | number)[] = [];
+  const sequence: (string | number)[] = [];
   words.map((text) => {
     sequence.push(text);
     sequence.push(1000);

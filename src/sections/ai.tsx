@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import createGlobe from "cobe";
 import { motion } from "motion/react";
 import { IconBrandYoutubeFilled } from "@tabler/icons-react";
-
+import Image from "next/image";
 
 export function AIFeaturesSection() {
   const features = [
@@ -110,7 +110,7 @@ export const SkeletonOne = () => {
       <div className="w-full  p-5  mx-auto bg-white dark:bg-neutral-900 shadow-2xl group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  ">
           {/* TODO */}
-          <img
+          <Image
             src="/ai/efficiency.png"
             alt="header"
             width={800}
@@ -136,7 +136,7 @@ export const SkeletonThree = () => {
       <div className="w-full  mx-auto bg-transparent dark:bg-transparent group h-full">
         <div className="flex flex-1 w-full h-full flex-col space-y-2  relative">
           <IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
-          <img
+          <Image
             src="https://i.ytimg.com/vi/S9dc0y_Zesc/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCmTUzBqgZuisCatVo4gcAXOt665g"
             alt="header"
             width={800}
@@ -191,11 +191,11 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
               alt="bali images"
-              width="500"
-              height="500"
+              width={500}
+              height={500}
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover shrink-0"
             />
           </motion.div>
@@ -213,11 +213,11 @@ export const SkeletonTwo = () => {
             whileTap="whileTap"
             className="rounded-xl -mr-4 mt-4 p-1 bg-white dark:bg-neutral-800 dark:border-neutral-700 border border-neutral-100 shrink-0 overflow-hidden"
           >
-            <img
+            <Image
               src={image}
               alt="bali images"
-              width="500"
-              height="500"
+              width={500}
+              height={500}
               className="rounded-lg h-20 w-20 md:h-40 md:w-40 object-cover shrink-0"
             />
           </motion.div>

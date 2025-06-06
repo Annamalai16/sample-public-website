@@ -6,14 +6,14 @@ import { cn } from "@/lib/utils";
 import { Textarea } from "@/components/ui/text-area";
 import { Select } from "@/components/ui/select";
 
-export function SignupFormDemo() {
+export function ContactUsSection() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     console.log("Form submitted");
   };
   return (
     <section id="contact-us" className="h-screen flex items-center justify-center">
-      <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black shadow-xl border-gray-800 border-1">
+      <div className="shadow-input mx-auto w-full max-w-md rounded-none bg-white p-4 md:rounded-2xl md:p-8 dark:bg-black shadow-xl border-gray-800 border-1 max-sm:max-w-[96vw]">
         <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
           Contact Us
         </h2>

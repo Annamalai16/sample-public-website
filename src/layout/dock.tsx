@@ -8,8 +8,9 @@ import {
   IconRobot,
 } from "@tabler/icons-react";
 import { useRouter, usePathname } from "next/navigation";
+import Image from "next/image";
 
-export function FloatingDockDemo() {
+export function Dock() {
   const router = useRouter();
   const pathname = usePathname();
 
@@ -46,11 +47,12 @@ export function FloatingDockDemo() {
     {
       title: "Home",
       icon: (
-        <img
+        <Image
           src="/logo.png"
           width={20}
           height={20}
           alt="Konnecture Logo"
+          className="h-full w-full"
         />
       ),
       href: "/",
@@ -76,4 +78,4 @@ export function FloatingDockDemo() {
     </div>
   );
 }
-export default FloatingDockDemo;
+export default Dock;

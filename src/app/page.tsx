@@ -4,9 +4,9 @@ import { CompareSection } from "@/sections/compare";
 import { ProcessSection } from "@/sections/process";
 import { TestimonialSection } from "@/sections/testimonials";
 import { IndustrySectorsSection } from "@/sections/industry-sectors";
-import { SignupFormDemo } from "@/sections/contact-us";
+import { ContactUsSection } from "@/sections/contact-us";
 
-export default function ThreeDCardDemo() {
+export default function Home() {
   return (
     <>
       <HeroSection />
@@ -15,7 +15,7 @@ export default function ThreeDCardDemo() {
       <IndustrySectorsSection />
       <CompareSection />
       <TestimonialSection />
-      <SignupFormDemo />
+      <ContactUsSection />
       <div className="h-[100px]" />
     </>
   );

@@ -2,7 +2,7 @@
 import { SectionHeader } from "@/components/general/section-header";
 import { AnimatedTestimonials } from "@/components/ui/animated-testimonials";
 
-function AnimatedTestimonialsDemo() {
+function Testimonials() {
   const testimonials = [
     {
       quote:
@@ -44,7 +44,7 @@ export function TestimonialSection() {
             </div>
           }
         />
-        <AnimatedTestimonialsDemo />
+        <Testimonials />
       </div>
     </section>
   );

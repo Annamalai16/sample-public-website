@@ -1,5 +1,4 @@
 import { cn } from "@/lib/utils";
-import { IconArrowNarrowRight } from "@tabler/icons-react";
 import { motion, useScroll, useTransform } from "motion/react";
 import { useRef } from "react";
 
